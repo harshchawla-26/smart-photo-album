@@ -1,0 +1,10 @@
+version: 0.1
+phases:
+  install:
+    commands:
+      - aws cloudformation package --template-file sam_template.yml --s3-bucket harsh-chawla --output-template-file outSamTemplate.yaml
+artifacts:
+  type: zip
+  files:
+    - sam_template.yml
+    - outSamTemplate.yaml
