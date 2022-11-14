@@ -7,7 +7,7 @@ Resources:
     Properties:
       Handler: pipeline-lambda.lambda_handler
       Runtime: python3.7
-      CodeUri: s3://harsh-chawla/Lambdas/
+      CodeUri: ./Lambdas/
       Role: "arn:aws:iam::528978711933:role/service-role/pipeline-lambda-role-hs8ljllg"
       Timeout: 123
       MemorySize: 128
