@@ -5,7 +5,7 @@ Resources:
   LF1Function:
     Type: AWS::Serverless::Function
     Properties:
-      Name: pipeline-lambda
+      
       Handler: pipeline-lambda.lambda_handler
       Runtime: python3.7
       CodeUri: ./Lambdas/
