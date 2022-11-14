@@ -14,4 +14,23 @@ Resources:
       Role: "arn:aws:iam::528978711933:role/service-role/pipeline-lambda-role-hs8ljllg"
       Timeout: 123
       MemorySize: 128
-
+  LF2Function:
+    Type: AWS::Serverless::Function
+    Properties:
+      FunctionName: index-photos2
+      Handler: index-photos.lambda_handler
+      Runtime: python3.7
+      CodeUri: ./Lambdas/
+      Role: "arn:aws:iam::528978711933:role/service-role/index-photos-role-g3cqa5kr"
+      Timeout: 123
+      MemorySize: 128
+    LF3Function:
+    Type: AWS::Serverless::Function
+    Properties:
+      FunctionName: search-photos2
+      Handler:search-photos.lambda_handler
+      Runtime: python3.7
+      CodeUri: ./Lambdas/
+      Role: "arn:aws:iam::528978711933:role/service-role/search-photos-role-xmn1paka"
+      Timeout: 123
+      MemorySize: 128
