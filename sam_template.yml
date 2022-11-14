@@ -24,7 +24,7 @@ Resources:
       Role: "arn:aws:iam::528978711933:role/service-role/index-photos-role-g3cqa5kr"
       Timeout: 123
       MemorySize: 128
-    LF3Function:
+  LF3Function:
     Type: AWS::Serverless::Function
     Properties:
       FunctionName: search-photos2
