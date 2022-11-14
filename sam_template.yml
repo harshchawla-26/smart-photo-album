@@ -6,7 +6,6 @@ Resources:
   LF1Function:
     Type: AWS::Serverless::Function
     Properties:
-      FunctionName: pipeline-lambda2
       Handler: pipeline-lambda.lambda_handler
       Runtime: python3.7
       CodeUri: ./Lambdas/
@@ -16,7 +15,6 @@ Resources:
   LF2Function:
     Type: AWS::Serverless::Function
     Properties:
-      FunctionName: index-photos2
       Handler: index-photos.lambda_handler
       Runtime: python3.7
       CodeUri: ./Lambdas/
@@ -26,7 +24,6 @@ Resources:
   LF3Function:
     Type: AWS::Serverless::Function
     Properties:
-      FunctionName: search-photos2
       Handler: search-photos.lambda_handler
       Runtime: python3.7
       CodeUri: ./Lambdas/
